@@ -82,12 +82,67 @@
     <nav>
       <ul>
         <li><a href="#pdwm">pdwm</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#phyos-utils">phyos utils</a></li>
       </ul>
     </nav>
 							</article>
+              <article id="phyos-utils">
+           <section>
+            <h2>phyOS-utils - Useful scripts & system wide settings guide</h2><b><a href="#wiki">back to wiki</a></b>
+           </section>     
+        <section>
+            <h3>CUSTOMIZATION SCRIPTS</h3>
+            <dl class="options">
+                <dt><b>bm - bookmark script</b></dt>
+                <dd>
+                    Bookmark directories & navigate through them either from terminal or Win+d button combination
+                    <p>E.g: bm -a ./Desktop @Desktop will add a bookmark as @Desktop. Usage: jmp @Desktop from terminal, or Win+d then choose from rofi.</p>
+                    <p>Actions:</p>
+                    <ul>
+                        <li><b>bm -a</b> $dir @Aliasname - Add bookmark</li>
+                        <li><b>bm -r</b> @Aliasname - Removes bookmark</li>
+                        <li><b>bm -c</b> - Removes all bookmarks</li>
+                    </ul>
+                </dd>
+                <dt><b>pOS-setbg</b></dt>
+                <dd>
+                    Set wallpaper according to ${img_path}, also update lock screen. If ${img_path} is not valid or empty, sets default wallpaper.
+                </dd>
+                <dt><b>pOS-make-bar</b></dt>
+                <dd>Make your own status bar via script. Use vim keys or arrows to navigate. Hit enter to select a block, enter ---STOP--- to finish selection. Note that blocks will be ordered according to your selection order.</dd>
+                <dt><b>pOS-sddm-choose-theme</b></dt>
+                <dd>Choose from available sddm themes. Install custom themes with pacman. [Available themes in phyOS-repo]</dd>
+                <dt><b>pOS-grub-choose-theme</b></dt>
+                <dd>Choose from available grub themes. Install custom themes with pacman. [Available themes in phyOS-repo]</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h3>SYSTEM SCRIPTS</h3>
+            <dl class="options">
+                <dt><b>phyOS-grub-conf</b></dt>
+                <dd>Update grub configurations to phyOS latest</dd>
+                <dt><b>phyOS-update-kernel-conf</b></dt>
+                <dd>Run this script to update your kernel & initramfs configuration. If you have issues on boot, this will add a new kernel which early graphics (KMS) are disabled.</dd>
+                <dt><b>phyOS-update-mirrors</b></dt>
+                <dd>Run this script to update your mirrors to faster ones.</dd>
+                <dt><b>phyup</b> - Update dotfiles & dwm script</dt>
+                <dd>Update dotfiles & dwm script. Run <b>phyup dots --force</b> to force update dotfiles to newest update.</dd>
+                <dt><b>pdwmc</b> (pdwm control center)</dt>
+                <dd>Change attributes (colors, keys, buttons, app settings) for pdwm. Run <b>pdwmc --help</b> for available options.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h3>SEE ALSO</h3>
+            <p>dwm(1)</p>
+        </section>
+
+        <section>
+            <h3>MISSING/BUGS</h3>
+            <p>Contact: Arda Atci &lt;arda@phyos.su&gt;</p>
+        </section>
+              </article>
 <article id="pdwm">
        <section>
          <h2>phyOS-pdwm - dynamic window manager</h2><b><a href="#wiki">back to wiki</a></b>
