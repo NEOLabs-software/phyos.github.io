@@ -1668,3 +1668,22 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+    /* wiki nav bar*/
+  #wiki ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#wiki li {
+  display: inline;
+}
+
+#wiki li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
